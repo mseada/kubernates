@@ -1,0 +1,5 @@
+// Useful Commands for me 
+
+---- Open Sh inside POD
+
+#kubectl exec -it --namespace=elastic-stack app sh
