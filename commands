@@ -1,5 +1,24 @@
 // Useful Commands for me 
 
----- Open Sh inside POD
+---- Open shell inside POD
 
 #kubectl exec -it --namespace=elastic-stack app sh
+
+---------------------------------------
+
+--- genrate Pod definition template using run command
+
+#kubectl run yellow --image=busybox --restart=Never --dry-run -o yaml > pod.yaml
+
+then edit the file 
+-----------------------------------------------------
+--export existing pod definition file
+
+#kubectl get pod pod-name -o yaml > file.yaml
+
+------------------------------------------------------
+
+--- check pod logs
+#kubectl logs pod-name --namespace=name
+
+
