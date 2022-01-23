@@ -21,4 +21,7 @@ then edit the file
 --- check pod logs
 #kubectl logs pod-name --namespace=name
 
-
+-----------------------------------------------------
+--- create POD
+   force new file on existing pod 
+#kubectl replace -f simpleweb2.yaml --force
